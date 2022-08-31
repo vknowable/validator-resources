@@ -8,7 +8,7 @@
     - the basics: role & responsibility; best practices; connecting with the community
     - how-to: secure key management
     - how-to: monitoring/alerting
-  - standard considerations for delegation programs
+  - standard considerations for delegation programs (target audience: foundations)
 - *what are some of the tail risks?*
   - how to handle a manual state change
 - *how can validators organize?* against centralized power that may compromise assumed blockchain properties
