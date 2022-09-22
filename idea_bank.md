@@ -1,6 +1,6 @@
 # Cosmos Ecosystem Validators: how can we level up together?
 
-## Idea Bank
+## Please steal from our Idea Bank
 (in no particular order)
 
 - *what kind of new validators do we want to encourage?*
