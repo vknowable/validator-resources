@@ -38,18 +38,25 @@ maybe we'll address the issue at the beginning of the set of working hours. In c
 - How can the alertee get additional help if they need it?
 - How should the alertee document an event? 
 
-### Agoric policy
+## Agoric policy
+
 **Note:** This policy is actively being developed on the testnet, and has not yet been implemented on mainnet.
 
-Objectives:
+---
+
+**Objective: Stay in the active set**
+
+Falling out of the active set results in a) Knowable delegators' governance voting power not counting in a vote that ends while inactive; b) Knowable delegators not receiving staking income while inactive; and c) reasonable questions about our ability to fulfill our role as validator operators, depending upon what made us inactive.
+
 #### 1. Jail prevention
-We must prevent our validator from being jailed, which happens due a failure to sign blocks. [Agoric parameters](https://bigdipper.live/agoric/params) are set to a window of 5,000 blocks, and at 6s per block, that's 8hr 20min of being offline before being jailed. We won't be slashed, but we won't be earning and it damages our reputation. How can we prevent this?
+We must prevent our validator from being jailed, which happens due a failure to sign blocks, and the protocol will remove our validator from the active set.
+[Agoric parameters](https://bigdipper.live/agoric/params) are set to a window of 5,000 blocks, and at 6s per block, that's 8hr 20min of being offline before being jailed. We won't be slashed, but we won't be earning and it damages our reputation. How can we prevent this?
 
 - track missed pre-commit events
     - **track** 15 missed blocks; **soft alert** 50 missed blocks (5 minutes); strong alert 
 
 #### 2. Rank sustainability
-We must ensure that our validator stays above Rank 101 by stake
+We must ensure that our validator stays above Rank 101 by voting power in order to remain in the active set.
 
 
 ### Cosmos Hub policy
