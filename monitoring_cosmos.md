@@ -25,10 +25,10 @@ It depends on the chain. Knowable is running two different mainnet validators, a
 - [Cosmos Hub policy](#cosmos-hub-policy) (inactive)
 
 ### What kinds of alerts are there?
-1. **SOS alert** wakes you up out of bed for an emergency 
-2. **Strong alert** gets your attention outside of normal work hours, giving you time to avoid an emergency
-3. **Soft alert** gets your attention during working hours
-4. **Tracked** gives no alert, but recorded to review at regularly scheduled intervals
+1. **SOS alert** wakes you up out of bed for an emergency - **phone call that bypasses DND mode**
+2. **Strong alert** gets your attention outside of normal work hours, giving you time to avoid an emergency - **text message**
+3. **Soft alert** gets your attention during working hours - a)**email** b)**work message**
+4. **Track** gives no alert, but recorded to review at regularly scheduled intervals - **logs**
 
 There are certain events and conditions that we want to track, and there are thresholds or events that we want notifications for.
 In some cases we'll want to be notified immediately (like wake up, there's an emergency). In other cases we'll want a softer warning, so
@@ -42,10 +42,13 @@ maybe we'll address the issue at the beginning of the set of working hours. In c
 **Note:** This policy is actively being developed on the testnet, and has not yet been implemented on mainnet.
 
 Objectives:
-1. Jail prevention
-We must prevent our validator from being jailed, which happens due to excessive downtime.
+#### 1. Jail prevention
+We must prevent our validator from being jailed, which happens due a failure to sign blocks. [Agoric parameters](https://bigdipper.live/agoric/params) are set to a window of 5,000 blocks, and at 6s per block, that's 8hr 20min of being offline before being jailed. We won't be slashed, but we won't be earning and it damages our reputation. How can we prevent this?
 
-2. Rank sustainability
+- track missed pre-commit events
+    - **track** 15 missed blocks; **soft alert** 50 missed blocks (5 minutes); strong alert 
+
+#### 2. Rank sustainability
 We must ensure that our validator stays above Rank 101 by stake
 
 
