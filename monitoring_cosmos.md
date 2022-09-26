@@ -20,6 +20,10 @@
 
 Some of these events/metrics should get our attention immediately, while others we may track to review at regularly scheduled intervals.
 
+It depends on the chain. Knowable is running two different mainnet validators, and these are our policies:
+- [Agoric policy](#agoric-policy)
+- [Cosmos Hub policy](#cosmos-hub-policy) (inactive)
+
 ### What kinds of alerts are there?
 1. **SOS alert** wakes you up out of bed for an emergency 
 2. **Strong alert** gets your attention outside of normal work hours, giving you time to avoid an emergency
@@ -33,6 +37,20 @@ maybe we'll address the issue at the beginning of the set of working hours. In c
 ### Who gets alerted and how?
 - How can the alertee get additional help if they need it?
 - How should the alertee document an event? 
+
+### Agoric policy
+**Note:** This policy is actively being developed on the testnet, and has not yet been implemented on mainnet.
+
+Objectives:
+1. Jail prevention
+We must prevent our validator from being jailed, which happens due to excessive downtime.
+
+2. Rank sustainability
+We must ensure that our validator stays above Rank 101 by stake
+
+
+### Cosmos Hub policy
+Since we are currently inactive, setting our policy is lower priority and is TBD (to be determined).
 
 ### How can we improve/expand our monitoring?
 - What else are we missing?
