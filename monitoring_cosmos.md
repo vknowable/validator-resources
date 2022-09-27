@@ -1,9 +1,15 @@
-# Monitoring a Cosmos chain validator
+# Monitoring a Cosmos chain
 ###### *created Sep 22, 2022; last updated Sep 22, 2022*
-## Warning: this is a work in progress!
+### Warning: this is a work in progress!
 ----
+## Summary
+We're invested in the success of a number of Cosmos chains, so we'll want to [monitor](#what-should-we-be-watching-for) security, liveness, crypto, and social metrics. Then we'll want to be after certain events or thresholds--these are our [alert types](#what-kinds-of-alerts-are-there). Knowable has an [alert response procedure](#alert-response-procedure) for knowing how to respond to alerts. Finally we have specific [monitor-alert policies](#monitor-alert-policies) for each community that we are invested in. Our [Agoric alert-monitor policy](#agoric-policy) is the most developed so far. **Please comment / contact us if you have feedback**, we truly value feedback about [how we can improve](#how-can-we-improve).
 
-### What should we be watching for if we're invested in a Cosmos validator?
+'
+
+## What should we be watching for?
+Security monitoring, liveness metrics, crypto metrics, social events & metrics (eg. emergencies; governance)
+
 1. Security monitoring
     - compromised signing keys
     - compomised accounts
@@ -17,14 +23,18 @@
 4. Social events & metrics
     - emergencies triggered by core devs or reputable validator operators
     - governance proposals
+    
+Some of these events/metrics should get our attention immediately, while others we may track to review at regularly scheduled intervals. It will depend on the protocol.
 
-Some of these events/metrics should get our attention immediately, while others we may track to review at regularly scheduled intervals.
+Knowable is running two different mainnet validators, and these are our policies:
+- [Agoric policy](#agoric-alert-monitor-policy)
+- [Cosmos Hub policy](#cosmos-hub-alert-monitor-policy) (validator inactive)
 
-It depends on the chain. Knowable is running two different mainnet validators, and these are our policies:
-- [Agoric policy](#agoric-policy)
-- [Cosmos Hub policy](#cosmos-hub-policy) (inactive)
+'
 
-### What kinds of alerts are there?
+## What kinds of alerts are there?
+SOS alerts for emergencies, strong alerts to avoid emergencies, soft alerts for issues that should be addressed during working hours, and there are non-alerted things that we track to review the health of our operations.
+
 1. **SOS alert** wakes our devops person up out of bed for an emergency
     - repeated [PagerDuty](https://www.pagerduty.com) phone calls that bypass the phone's DND mode
     - [PagerDuty](https://www.pagerduty.com) email sent to a dedicated email address
@@ -41,11 +51,17 @@ There are certain events and conditions that we want to track, and there are thr
 In some cases we'll want to be notified immediately (like wake up, there's an emergency). In other cases we'll want a softer warning, so
 maybe we'll address the issue at the beginning of the set of working hours. In cases that may lead to an emergency, we'll want a strong alert--enough to interrupt dinner, but not get us up out of bed. Finally, we may not want to be alerted, but still want to collect data for a regular review on the health and performance of our operations.
 
-### Who gets alerted and how?
-- How can the alertee get additional help if they need it?
-- How should the alertee document an event? 
+'
 
-## Agoric policy
+## Alert Response Procedure
+- How can the alertee get additional help if they need it?
+- How should the alertee document an event?
+
+'
+
+# Monitor-Alert Policies
+
+## Agoric Alert-Monitor Policy
 
 **Note:** This policy is actively being developed on the testnet, and has not yet been implemented on mainnet.
 
@@ -87,12 +103,13 @@ Since neither option will be possible for us to execute as an emergency action, 
 - **soft alert tbd** (when getting close to Rank 100, but tbd for how to codify that)
 - **track tbd** (for watching for trends to ensure sustainable ranking)
 
+'
 
-### Cosmos Hub policy
+## Cosmos Hub Alert-Monitor Policy
 
 ---
 
-Since we are currently inactive, setting our policy is lower priority and is TBD (to be determined).
+Since the Knowable validator is currently inactive, developing this policy is lower priority and is TBD (to be determined).
 
-### How can we improve/expand our monitoring?
+## How can we improve?
 - What else are we missing?
