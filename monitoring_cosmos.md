@@ -1,5 +1,5 @@
 # Monitoring a Cosmos chain
-###### *created Sep 22, 2022; last updated Sep 22, 2022*
+###### *created Sep 22, 2022; last updated Sep 27, 2022*
 ### Warning: this is a work in progress!
 ----
 ## Summary
