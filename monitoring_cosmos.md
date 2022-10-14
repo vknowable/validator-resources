@@ -3,7 +3,7 @@
 ### Warning: this is a work in progress!
 ----
 ## Summary
-We're invested in the success of a number of Cosmos chains, so we'll want to [monitor](#what-should-we-be-watching-for) security, liveness, crypto, and social metrics.
+We're invested in the success of a number of Cosmos chains, so we'll strive to [monitor](#what-should-we-be-watching-for) security, liveness, crypto, and social metrics.
 
 Then we'll want to be after certain events or thresholds--these are our [alert types](#what-kinds-of-alerts-are-there).
 
@@ -12,6 +12,8 @@ Knowable has an [alert response procedure](#alert-response-procedure) for knowin
 Finally we have specific [monitor-alert policies](#monitor-alert-policies) for each community that we are invested in. Our [Agoric alert-monitor policy](#agoric-policy) is the most developed so far.
 
 There are [different monitoring software options](#monitoring-software), and we're testing out [Grafana](#grafana). Next we'll try [PANIC](https://github.com/SimplyVC/panic), an open source option by our friends at [Simply](https://simply-vc.com.mt/).
+
+We're testing out hosting [bare metal servers 🧸🤘](bare_metal.md)--connect with us if you are too! Let's make a Cosmos bear metal gang 🧸🤘
 
 **Please comment / contact us if you have feedback**, we truly value feedback about [how we can improve](#how-can-we-improve).
 
