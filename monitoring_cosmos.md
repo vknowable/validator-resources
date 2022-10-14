@@ -1,5 +1,5 @@
 # Monitoring a Cosmos chain
-###### *created Sep 22, 2022; last updated Sep 27, 2022*
+###### *created Sep 22, 2022; last updated Oct 14, 2022*
 ### Warning: this is a work in progress!
 ----
 ## Summary
@@ -10,6 +10,8 @@ Then we'll want to be after certain events or thresholds--these are our [alert t
 Knowable has an [alert response procedure](#alert-response-procedure) for knowing how to respond to alerts.
 
 Finally we have specific [monitor-alert policies](#monitor-alert-policies) for each community that we are invested in. Our [Agoric alert-monitor policy](#agoric-policy) is the most developed so far.
+
+There are [different monitoring software options](#monitoring-software), and we're testing out [Grafana](https://grafana.com). Next we'll try [PANIC](https://github.com/SimplyVC/panic), an open source option by our friends at [Simply](https://simply-vc.com.mt/).
 
 **Please comment / contact us if you have feedback**, we truly value feedback about [how we can improve](#how-can-we-improve).
 
@@ -118,6 +120,11 @@ Since neither option will be possible for us to execute as an emergency action, 
 ---
 
 Since the Knowable validator is currently inactive, developing this policy is lower priority and is TBD (to be determined).
+
+## Monitoring Software
+- [PANIC](https://github.com/SimplyVC/panic) is Cosmos-specific open source by our friends at [Simply](https://simply-vc.com.mt/)
+- [Grafana](https://grafana.com) is general purpose open source monitoring/alerting software that uses Prometheus metrics
+- [Datadog](https://www.datadoghq.com) is a professionally hosted service
 
 ## How can we improve?
 - What else are we missing?
