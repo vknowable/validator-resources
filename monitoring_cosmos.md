@@ -11,7 +11,7 @@ Knowable has an [alert response procedure](#alert-response-procedure) for knowin
 
 Finally we have specific [monitor-alert policies](#monitor-alert-policies) for each community that we are invested in. Our [Agoric alert-monitor policy](#agoric-policy) is the most developed so far.
 
-There are [different monitoring software options](#monitoring-software), and we're testing out [Grafana](https://grafana.com). Next we'll try [PANIC](https://github.com/SimplyVC/panic), an open source option by our friends at [Simply](https://simply-vc.com.mt/).
+There are [different monitoring software options](#monitoring-software), and we're testing out [Grafana](#grafana). Next we'll try [PANIC](https://github.com/SimplyVC/panic), an open source option by our friends at [Simply](https://simply-vc.com.mt/).
 
 **Please comment / contact us if you have feedback**, we truly value feedback about [how we can improve](#how-can-we-improve).
 
@@ -125,6 +125,13 @@ Since the Knowable validator is currently inactive, developing this policy is lo
 - [PANIC](https://github.com/SimplyVC/panic) is Cosmos-specific open source by our friends at [Simply](https://simply-vc.com.mt/)
 - [Grafana](https://grafana.com) is general purpose open source monitoring/alerting software that uses Prometheus metrics
 - [Datadog](https://www.datadoghq.com) is a professionally hosted service
+
+### Grafana
+We are currently testing out Grafana.
+
+We use a dedicated, cloud-hosted machine (for reliability) to monitor our infrastructure (whereas we'll use bare metal for our validators). We'll strive to uncorrelate our monitoring machine setup from those of our validator machines, in case there's a failure that affects both our monitoring machine and our validator simultaneously eg. internet outage in a geographic location; a bug in an operating system.
+
+Grafana uses outputs from Prometheus metrics that we enable in each of our Cosmos-based nodes: https://github.com/tendermint/tendermint/blob/master/docs/nodes/metrics.md
 
 ## How can we improve?
 - What else are we missing?
